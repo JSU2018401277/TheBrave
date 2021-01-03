@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="order by dede58.com"/>
+    <title>用户登录</title>
+    <link href="image/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+</head>
+<body>
+<!-- login -->
+<div class="top center">
+    <div class="logo center">
+        <a href="./index.jsp" target="_blank">
+            <img src="./image/logo_top.png" alt="">
+        </a>
+    </div>
+</div>
+    <div class="login">
+        <div class="login_center">
+            <div class="login_top">
+                <div class="left fl">用户登录</div>
+                <div class="right fr">没有账号？<a href="register.html" onclick="overlay();">立即注册</a></div>
+                <div class="clear"></div>
+                <div class="xian center"></div>
+            </div>
+            <span id="hint"></span>
+            <div class="login_main center">
+                <div class="userName">用户名:&nbsp;
+                    <input class="shurukuang" type="text" id="userName" placeholder="请输入你的用户名" required/>
+                </div>
+                <div class="userName">密&emsp;码:&nbsp;
+                    <input class="shurukuang" type="password" id="userPassword" placeholder="请输入你的密码" required/>
+                </div>
+            </div>
+            <div class="login_submit">
+                <input class="submit" type="submit" name="submit" onclick="login();" value="立即登录" >
+            </div>
+            <div class="forget">
+                <a href="#" onclick="overlay();">忘记密码？</a>
+            </div>
+        </div>
+    </div>
+
+<div id="modal-overlay"></div>
+<div id="modal-data">
+    <img class="ico" src="image/ico_close.png" onclick="overlay()">
+    <p class="title">使用更多功能，请下载贰货App</p>
+    <div class="qr-code">
+        <p style="padding-bottom: 10px;">手机扫描二维码下载</p>
+        <div id="d-qrcode"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="copyright">&copy;erhuo.immi.com 版权所有</div>
+    <div class="copyright">违法和不良信息举报电话：xxx-xxxx-xxxx</div>
+</footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</body>
+</html>

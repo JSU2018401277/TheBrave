@@ -1,0 +1,127 @@
+/*样式初始化*/
+*{margin:0;padding: 0;}
+a{text-decoration: none;color: #000;}
+img {border: 0; vertical-align:middle;} 
+ul li{list-style: none;}
+body,h1,h2,h3,h4,h5,h6{font: 12px 宋体,Times New Roman;}
+body{background: url('../image/image_1.jpg') no-repeat center center;background-size: 100% 100%;}
+
+/*预定义样式*/
+.w{width: 1000px; margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear:both;}
+.center{margin:0 auto;}
+.border{border:1px solid red;}
+
+table{width: 360px;height: 240px;border:none;margin: 0 auto;}
+tr,th,td{height: 20px;}
+th{width: 60px;}
+input:focus{border: 2px solid orange;}
+/*用户登录*/
+.top{width: 100%;height: 70px;background: #fff;padding-top: 15px;}
+.top .logo{width: 1130px; height: 70px;}
+.form{width: 1226px; height:588px;}
+.login{width: 400px; height: 400px;margin:70px auto; margin-right: -20px; background: #fff; color:black; border-radius: 4px;}
+.login .login_center{width: 360px;margin: 10px auto;}
+.login .login_top{margin: 10px 0;}
+.login .login_top .left{margin-top:10px;height: 40px;line-height: 40px;font-weight: bold;font-size: 20px;}
+.login .login_top .right{margin-top:10px;height: 40px;line-height: 40px;font-size: 13px;}
+.login .login_top .right a{color:red;font-weight: bold;}
+.login .login_top .right a:hover{color:#f58021;}
+.xian{height: 2px;background: #ff6700;margin:8px 0;}
+#hint {color: red; font-size: 14px;position: relative;top: 28px;left: 61px;}
+
+.login_main{padding:10px 0;}
+.login_main .userName{font:16px Times New Roman;height: 40px;line-height: 40px;margin:35px 0;}
+.login_main .userName .shurukuang{outline:none;width: 220px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.login_main .userName .yanzhengma{outline:none;width: 100px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.login_main .userName .shurukuang:focus{border: 1px solid #f58021;background: #F0FFFF;}
+.login_main .userName .yanzhengma:focus{border: 1px solid #f58021;background: #F0FFFF;}
+.login_main .userName .right{margin-left: 20px;}
+
+/*设置按钮样式*/
+.login .login_center .login_submit{margin: 15px auto;}
+.login .login_center .forget{margin: 5px auto;width: 240px;height: 30px; text-align: center;}
+.login .login_center .forget a:hover{color: #f58021;}
+.login .login_center .submit{border:none;width: 240px;height: 45px;margin-left:55px;background: #ff6700;color: #fff; font-size: 20px;font-weight: bold;letter-spacing: 2px;cursor:pointer;border-radius: 4px;}
+.login .login_center .submit:hover{border:1px solid #fff;}
+
+
+/*用户注册*/
+.regist{width: 100%; height: 100%; margin:0px auto; background:#fff; color:#000;}
+.regist_center{width: 760px; margin: 0px auto;}
+.regist .regist_top{padding-top: 20px;padding-bottom: 20px;}
+.regist .regist_top .left{margin-top: 20px;height: 40px;line-height: 40px;font-weight: bold;font-size: 20px;}
+.regist .regist_top .right{margin-top: 20px;height: 40px;line-height: 40px;font-size: 13px;}
+.regist .regist_top .right a{color:#ff6700;font-weight: bold;}
+.regist .regist_top .right a:hover{color:orange;}
+.xian{height: 2px;background: #ff6700;margin: 8px auto;}
+
+.regist_main{padding:10px 0;padding-left:45px;}
+.regist_main .userName{font:16px Times New Roman;height: 40px;line-height: 40px;margin:20px 0;}
+.regist_main .userName .shurukuang{outline:none;width: 220px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.regist_main .userName .yanzhengma{outline:none;width: 110px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.regist_main .userName .shurukuang:focus{border: 1px solid #f58021;background: #F0FFFF;}
+.regist_main .userName .yanzhengma:focus{border: 1px solid #f58021;background: #F0FFFF;}
+.regist_main .userName .right{margin-left: 20px;}
+
+.regist_main .userName span{display:inline-block;margin-left:20px;font-size: 12px;color: #f58021;font-weight: bold;}
+/*.regist_main .username span:hover{color: #ff6700;}*/
+
+.send-code {
+    display: block;
+    padding: 0px 14px;
+    text-align: center;
+    color: #f58021;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.regist .regist_center .regist_submit{margin: 20px auto;}
+.regist .regist_center .submit{border:none;width: 440px;height: 45px;margin-left:45px;background: #ff6700;color: #fff; font-size: 22px;font-weight: bold;letter-spacing: 8px;cursor:pointer;}
+.regist .regist_center .submit:hover{border:1px solid #ccc;}
+
+.gray {color: #ccc !important;}
+.hidden {display: none !important;}
+.show {display: inline-block !important;}
+.bottom{width:100%;position: absolute;bottom: 0px;}
+
+footer{width: 100%;height: 80px;background:#fff;padding: 30px 0;}
+footer .copyright{height: 30px;line-height: 30px;font-size: 13px;word-spacing: 15px;text-align: center;}
+footer .copyright:first-of-type{margin-top: 10px;}
+
+/* 定义模态对话框外面的覆盖层样式 */
+#modal-overlay {
+    visibility: hidden;
+    position: absolute;   /* 使用绝对定位或固定定位  */
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+    z-index: 1000;
+    background-color: #333;
+    opacity: 0.8;   /* 背景半透明 */
+}
+/* 模态框样式 */
+#modal-data{
+    visibility: hidden;
+    position: absolute;   /* 使用绝对定位或固定定位  */
+    top: 25%;
+    left: 25%;
+    width:50%;
+    height: 50%;
+    background-color: #fff;
+    border:1px solid #000;
+    padding:15px;
+    text-align:center;
+    z-index: 1002 !important;
+    border-radius: 10px;
+}
+#modal-data .ico {width: 20px;height: 20px;float: right;cursor: pointer;}
+#modal-data .qr-code {margin-top: 20px;}
+#modal-data .qr-code p {margin-top: 5px;}
+#modal-data .qr-code img {width: 200px;height: 200px;}
+#modal-data .title {font-size: 26px;color: #363636;margin-top: 50px;}
